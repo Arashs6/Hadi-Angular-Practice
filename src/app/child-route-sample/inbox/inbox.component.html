@@ -12,8 +12,8 @@
 <tbody>
   <tr *ngFor="let mail of mails"  [unRead] = mail.unRead >
   <td>{{mail.from}}</td>
-  <td>{{mail.body}}</td>
-<td>
+  <td *permission= "'x'">{{mail.body}}</td>
+<td *permission = "'X'">
   <!-- <a [routerLink]="['view',mail.id]">
     <span>View</span> -->
     <button (click) = "view(mail)">View</button>

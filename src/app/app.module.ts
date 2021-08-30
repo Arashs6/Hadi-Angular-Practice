@@ -8,6 +8,10 @@ import { InboxComponent } from './child-route-sample/inbox/inbox.component';
 import { ViewMailComponent } from './child-route-sample/view-mail/view-mail.component';
 import { ColorizeRowDirective } from './attribute-directive-sample/colorize-row.directive';
 import { UnReadRowDirective } from './attribute-directive-sample/unRead-row-directive';
+import { PermissionDirective } from './structural-directive-sample/perimission.directive';
+import { CardComponent } from './content-projection-sample/card.component';
+import { LinearChartComponent } from './linear-char/linear-chart.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 export const routes: Routes = [
   { 
@@ -31,7 +35,10 @@ export const routes: Routes = [
     //Child-Route-Sample
     ViewMailComponent,
     InboxComponent,
-
+    PermissionDirective,
+    CardComponent,
+    LinearChartComponent,
+    PieChartComponent
     //Secondary-Route-Sample
    
   ],
