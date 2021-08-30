@@ -1,0 +1,29 @@
+
+
+<!-- <table *permission="'X'"> -->
+<table >
+    <thead>
+      <tr>
+        <th>From</th>
+        <th>Subject</th>
+        <th>Body</th>
+      </tr>
+    </thead>
+<tbody>
+  <tr *ngFor="let mail of mails"  [unRead] = mail.unRead >
+  <td>{{mail.from}}</td>
+  <td>{{mail.body}}</td>
+<td>
+  <!-- <a [routerLink]="['view',mail.id]">
+    <span>View</span> -->
+    <button (click) = "view(mail)">View</button>
+  
+</td>
+</tr>
+</tbody>
+    
+</table>
+
+<!-- <view-mail [value]="model.currentMail"></view-mail> -->
+
+<router-outlet></router-outlet>
